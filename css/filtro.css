@@ -1,0 +1,20 @@
+img{
+    max-height: 16rem;
+}
+
+#xone:checked ~ #imagenes .ps4, #xone:checked ~ #imagenes .switch,#xone:checked ~ #imagenes .x360{
+    display: none;
+}
+
+#ps4:checked ~ #imagenes .xone, #ps4:checked ~ #imagenes .switch,#ps4:checked ~ #imagenes .x360{
+    display: none;
+}
+
+#switch:checked ~ #imagenes .ps4, #switch:checked ~ #imagenes .xone, #switch:checked ~ #imagenes .x360{
+    display: none;
+
+}
+#x360:checked ~ #imagenes .ps4, #x360:checked ~ #imagenes .switch,#x360:checked ~ #imagenes .xone{
+    display: none;
+
+}

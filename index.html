@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/filtro.css">
+</head>
+<body>
+    <header>
+    </header>
+    <main>
+        <section>
+            <!--inicio del filtro (no se puede ingresar el filtro dentro de algun elemento sin usar jquery, el filtro estalla)
+            el filtro tiene que ser hermano de id="imagenes" -->
+                <input type="radio" name="filtro" id="todo" checked>
+                <label for="todo">Todo</label>
+        
+                <input type="radio" name="filtro" id="xone" >
+                <label for="xone">Xbox One</label>
+        
+                <input type="radio" name="filtro" id="ps4" >
+                <label for="ps4">Ps4</label>
+        
+                <input type="radio" name="filtro" id="switch" >
+                <label for="switch">Switch</label>
+
+                <input type="radio" name="filtro" id="x360" >
+                <label for="x360">Xbox 360</label>
+    
+            <article id="imagenes">
+                
+                <img src="imagenes/bloodbornePs4.jpg" alt="bloodborne" class="ps4">
+                <img src="imagenes/immortals-fenyx-rising-3Ps4.jpg" alt="inmortals-fenix" class="ps4">
+                <img src="imagenes/legend-zelda-breath-wildSwitch.jpg" alt="breath of the wild" class="switch">
+                <img src="imagenes/portada-gears-5One.jpg" alt="gears of war 5" class="xone">
+                <img src="imagenes/remember-me360.jpg" alt="remember me" class="x360">
+
+            </article>
+        </section>
+    </main>
+    <div>
+
+
+    </div>
+
+    
+</body>
+</html>
