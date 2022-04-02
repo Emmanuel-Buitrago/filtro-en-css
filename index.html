@@ -9,8 +9,19 @@
 </head>
 <body>
     <header>
+        <span id="home"></span>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><span></span></li>
+                <li><h1>Galeria Jogo Bonito</h1></li>
+                <li><span></span></li>
+                <li><span></span></li>
+            </ul>
+        </nav>
     </header>
     <main>
+        
         <section>
             <!--inicio del filtro (no se puede ingresar el filtro dentro de algun elemento sin usar jquery, el filtro estalla)
             el filtro tiene que ser hermano de id="imagenes" -->
@@ -29,22 +40,52 @@
                 <input type="radio" name="filtro" id="x360" >
                 <label for="x360">Xbox 360</label>
     
-            <article id="imagenes">
+            <article id="productos">
                 
-                <img src="imagenes/bloodbornePs4.jpg" alt="bloodborne" class="ps4">
-                <img src="imagenes/immortals-fenyx-rising-3Ps4.jpg" alt="inmortals-fenix" class="ps4">
-                <img src="imagenes/legend-zelda-breath-wildSwitch.jpg" alt="breath of the wild" class="switch">
-                <img src="imagenes/portada-gears-5One.jpg" alt="gears of war 5" class="xone">
-                <img src="imagenes/remember-me360.jpg" alt="remember me" class="x360">
+                <div class="ps4">
+                    <h3 id="nombreJuego">Bloodborne</h3>
+                    <hr>
+                    <img src="imagenes/bloodbornePs4.jpg" alt="bloodborne" >
+                    <h5>Bloodborne nos lleva a la decrépita ciudad de Yharnam, cuyos habitantes han sido infectados por una misteriosa enfermedad sanguínea.</h5>
+                </div>
+                                
+                <div class="ps4">
+                    <h3 id="nombreJuego">Immortals fenyx rising</h3>
+                    <hr>
+                    <img src="imagenes/immortals-fenyx-rising-3Ps4.jpg" alt="inmortals-fenix" >
+                    <h5>Juega como Fenyx, una nueva semidiosa alada con la misión de salvar a los dioses griegos y a su hogar de una oscura maldición</h5>
+                </div>
+                                
+                <div class="switch">
+                    <h3 id="nombreJuego">Legend of zelda: breath of the wild</h3>
+                    <hr>
+                    <img src="imagenes/legend-zelda-breath-wildSwitch.jpg" alt="breath of the wild" >
+                    <h5>Nos presenta el título más ambicioso de la saga con un mundo abierto por explorar</h5>
+                </div>
+                                
+                <div class="xone">
+                    <h3 id="nombreJuego">Gears 5</h3>
+                    <hr>
+                    <img src="imagenes/portada-gears-5One.jpg" alt="gears of war 5" >
+                    <h5>Se centra en Kait Díaz (Laura Bailey), una forastera de ascendencia Locust. Como Kait, el jugador debe descubrir los orígenes del Enjambre </h5>
+                </div>
+                                
+                <div class="x360">
+                    <h3 id="nombreJuego">Remember me</h3>
+                    <hr>
+                    <img src="imagenes/remember-me360.jpg" alt="remember me" >
+                    <h5>Los recuerdos personales ahora pueden ser digitalizados, comprados, vendidos y comercializados.  </h5>
+                </div>
 
             </article>
         </section>
     </main>
-    <div>
+    <footer>
+        <br>
+        <p>Todos los derechos reservados</p>
+        <p>Uniagustiniana 2022</p>
 
-
-    </div>
-
+    </footer>
     
 </body>
 </html>
