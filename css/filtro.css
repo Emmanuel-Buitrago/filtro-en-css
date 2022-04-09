@@ -70,7 +70,7 @@ li a:hover {
 
 /**inicio del card**/
 
-#productos{
+#galeria__productos{
     display: flex;
     flex-wrap: wrap;
     
@@ -78,7 +78,7 @@ li a:hover {
 
 #nombreJuego{    font-weight: 600;}
 
-#productos div{
+#galeria__productos div{
     margin: 1rem;
     margin-top: 1rem;
     padding: 0.5rem;
@@ -92,7 +92,7 @@ li a:hover {
 
     border-radius: 0.5rem;
 }
-#productos div:hover{
+#galeria__productos div:hover{
     box-shadow: 5px 5px 5px 0px rgb(48, 0, 82);
 }
 
@@ -116,21 +116,6 @@ img{ padding:1rem;
 /**fin del card**/
 
 
-#xone:checked ~ #imagenes img:not([class~="xone"]){
-    display: none;
-}
-
-#ps4:checked ~ #imagenes img:not([class~="ps4"]){
-    display: none;
-}
-
-#switch:checked ~ #imagenes img:not([class~="switch"]){
-    display: none;
-
-}
-#x360:checked ~ #imagenes img:not([class~="x360"]){
-    display: none;
-}
 
 header {
     min-height: 10%
@@ -151,19 +136,19 @@ footer{
     color: rgb(201, 201, 201); ;
 }
 /**inicio de filtrado**/
-#xone:checked ~ #productos div:not([class~="xone"]){
+#galeria__xone--seleccion:checked ~ #galeria__productos div:not([class~="productos__xone"]){
     display: none;
 }
 
-#ps4:checked ~ #productos div:not([class~="ps4"]){
+#galeria__ps4--seleccion:checked ~ #galeria__productos div:not([class~="productos__ps4"]){
     display: none;
 }
 
-#switch:checked ~ #productos div:not([class~="switch"]){
+#galeria__switch--seleccion:checked ~ #galeria__productos div:not([class~="productos__switch"]){
     display: none;
 
 }
-#x360:checked ~ #productos div:not([class~="x360"]){
+#galeria__x360--seleccion:checked ~ #galeria__productos div:not([class~="productos__x360"]){
     display: none;
 
 }
