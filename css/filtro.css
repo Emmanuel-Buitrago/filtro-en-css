@@ -12,9 +12,8 @@ body{
     flex-direction: column;
 }
 
-#home{
+header span{
     height: 10vh;
-    width:10vh;
 }
 nav{
     position: fixed; 
@@ -117,22 +116,22 @@ img{ padding:1rem;
 /**fin del card**/
 
 
-#xone:checked ~ #imagenes .ps4, #xone:checked ~ #imagenes .switch,#xone:checked ~ #imagenes .x360{
+#xone:checked ~ #imagenes img:not([class~="xone"]){
     display: none;
 }
 
-#ps4:checked ~ #imagenes .xone, #ps4:checked ~ #imagenes .switch,#ps4:checked ~ #imagenes .x360{
+#ps4:checked ~ #imagenes img:not([class~="ps4"]){
     display: none;
 }
 
-#switch:checked ~ #imagenes .ps4, #switch:checked ~ #imagenes .xone, #switch:checked ~ #imagenes .x360{
+#switch:checked ~ #imagenes img:not([class~="switch"]){
     display: none;
 
 }
-#x360:checked ~ #imagenes .ps4, #x360:checked ~ #imagenes .switch,#x360:checked ~ #imagenes .xone{
+#x360:checked ~ #imagenes img:not([class~="x360"]){
     display: none;
-
 }
+
 header {
     min-height: 10%
 }
